@@ -1,0 +1,702 @@
+
+@import "variables";
+@import "ElementosConstantes"; /*Atajos y Botones- Nav y Footer*/
+@import "MediaQueries";
+
+html{
+	scroll-behavior: smooth;
+}
+
+
+/*-----------------------------------------------------------------------------------------Index*/
+
+.SliderInicio{
+
+	.carousel-indicators li{
+	    display: inline-block;
+	    width: 11px;
+	    height: 11px;
+	    margin: 2px;
+	    text-indent: -999px;
+	    cursor: pointer;
+	    background-color: #000\9;
+	    background-color: rgba(0,0,0,0);
+	    border: 1px solid #fff;
+	    border-radius: 10px;
+
+	}
+
+	.SliderInicio__Texto{
+		font-size: 200%;
+		margin-right: 0%;
+		margin-bottom: 15%;
+		line-height: 1.5;
+		color:white;
+		font-family: $Roboto;
+		animation: fadeInDown 1s;
+		a{
+			@include EstiloBoton;
+			font-size:60%;
+		}
+
+		.SliderInicio__Texto__1{
+			text-align: right; 
+			p{
+				font-family:$Muli;
+			}
+		}
+
+		.SliderInicio__Texto__2{
+			text-align: center; 
+			font-size: 120%;
+			a{
+				font-size: 50%;
+			}
+
+		}
+
+		.SliderInicio__Texto__3{
+			text-align: center; 
+			font-size: 120%;
+			a{
+				font-size: 50%;
+			}
+		}
+
+	}
+}
+
+.Inicio_Portada{
+	background-image: url(../media/Atardecerslider.jpg);
+	text-align:center;
+
+	article{
+		font-family: $Muli;
+		font-size: 200%;
+		color: white;
+		padding-top: 20%;
+		padding-bottom: 20%;
+		a{
+			@include EstiloBoton;
+			font-size: 70%;
+		}
+	}
+}
+
+.Sobre_Nosotros{
+	margin-top: 6%;
+	margin-bottom: 3%;
+	.Imagen_logo{
+		padding-right: 6%;
+		padding-left: 14%;
+		padding-bottom: 5%;
+
+	}
+	article{
+		font-family:$Muli;
+		text-align: justify;
+		font-size: 99%;
+		.subtitulo{
+			font-family:$Roboto;
+			font-weight: lighter;
+			font-size: 130%;
+		}
+		a{
+			@include EstiloBoton;
+		}
+	}
+}
+
+
+/*Sección servicios del Index*/
+
+
+.Servicios__Titulo{
+
+	hr{
+		width:65%;
+	}
+
+	h2{
+		margin-top: 4%;
+	 	font-size: 176%;
+	 	text-align: center;
+	 	font-family: $Roboto;
+	 	color: #2D2D2D;
+	 }
+
+	p{
+		text-align: center;
+		font-family:$Muli;
+		width: 70%;
+		margin-left:15%;
+	}
+}
+
+
+.ServiciosIndex{
+	margin-top: 5%;
+	margin-bottom: 6%;
+	margin-left: 5%;
+	display: flex;
+	flex-direction: row nowrap;
+	justify-content: space-around;
+
+
+	li{
+		list-style-type: none;
+	}
+
+	.Cuadros{ 
+		border-radius: 6%;
+		width: 75%; 
+		padding: 4% 3% 6% 3%;
+		list-style-type: none;
+		text-align: center;
+		font-family: $Roboto;
+		color: white;
+		font-size:75% ;
+		background-color: #6e9c87;
+		transition: background-color 1s;
+		margin: 0% 0% 0% 0%;
+
+		h3{
+			margin-top: 5%;
+			font-size: 170%;
+			font-weight: lighter;
+		}
+
+		p{
+			width: 90%;
+			text-align: center;
+			padding-left: 15%;
+		}
+
+		.Cuadros__Boton{
+			background-color: white;
+			border-radius: 5%;
+			color:black;
+			padding: 5px 10px 5px 10px;
+			margin-top: 15%;
+			margin-bottom:10%;
+		}
+
+		.Cuadros__Img{
+			margin-top: 5%;
+			margin-bottom: 6%;
+			border-radius: 5%;
+		}
+	}
+}
+
+
+.FotoFinal{
+	grid-area: FotoFinal;
+	width: 100%;
+}
+
+/*-----------------------------------------------------------------------------------------Productos*/
+.PortadaProductos{
+	background-image: url(../media/fondoProductos.jpg);
+	font-family: $Roboto;
+	text-align: center;
+	padding-top:10%;
+	padding-bottom:6%;
+	color:black;	
+	border-bottom: #9c9c9c solid 2.5px;
+	h1{
+		font-size:160%;
+		
+	}
+	p{
+		font-weight: lighter;
+		font-size: 145%;
+		width: 100%;
+		padding-bottom: 3% ;
+		animation: slideInDown 1s;	
+	}
+	li{
+		display: inline-block;
+		margin-right: 4%;
+		margin-bottom:5%;
+		font-size: 130%;
+
+		a{
+			@include EstiloBoton;
+		}
+	}
+}
+
+
+
+/*Frutos Secos Seccion*/
+
+
+.SeccionFrutosSecos{
+	margin: 8% 3% 8% 11%;
+	font-family: $Muli;
+	text-align: justify;
+	div{
+		padding-right: 7%;	
+		h2{
+			margin-bottom: 6%;
+		}
+		p{
+			margin-top: 6%;		
+			a{
+				@include EstiloBoton;
+				font-size:90%;
+			}
+		}
+
+	}
+
+}
+
+
+/*...Foto Nuez Full Size...*/
+
+.FotoNuez{
+	width: 100%;
+}
+
+/*....Fruta Fresca*/
+
+.SeccionFrutaFresca{
+	margin-left: 11%;
+	margin-top: 8%;
+	margin-bottom: 8%;
+	h2{
+		margin-bottom: 4%;
+	}
+
+	.SeccionFrutaFresca__Info{
+		padding-right: 7%;
+		font-family: $Muli;
+		text-align: justify;
+
+
+		a{
+			@include EstiloBoton;
+		}
+	}
+
+}
+
+
+/*Productos Derivados 		display: flex;
+		flex-direction:row;
+		margin-top: 7%;
+		margin-left: 130px;*/
+
+.SeccionDerivados{
+	margin-top: 6%;
+	.SeccionDerivados__Flex{
+		font-family: $Muli;
+
+		.SeccionDerivados__Flex__Info{
+			text-align: justify;
+			padding-left: 13%;
+			padding-right: 4%;
+
+			h2{
+				margin-left:0%;
+				font-size:$Roboto;
+			}
+		}
+	}
+
+	h3{
+		margin-top:5%;
+		font-family: $Muli;
+		font-size: 130%;
+		color: black;
+		text-align: left;
+		margin-left: 8%;
+
+	}
+	.SeccionDerivados__Cuadros{
+		display:flex;
+		flex-direction:row;
+		justify-content: justify;
+		width:100%;
+		list-style-type: none;
+		margin-bottom:1%;
+	
+		.Cuadros{ 
+			padding: 4% 3% 2% 3%;
+			list-style-type: none;
+			text-align: center;
+			color: black;
+			margin: 0% 0% 0% 0%;
+
+			flex-wrap:wrap;
+			.SeccionDerivados__Cuadros__titulo{
+				padding-top:5%;
+				font-family: $Roboto;
+				font-size: 110%;
+			}
+		}
+	}
+}
+
+
+
+.titulo{
+	font-family: $Roboto;
+	font-size: 170%;
+	color: green;
+	text-align: left;
+	animation: fadeInLeft 2s;
+	margin-bottom: 2%;
+}
+
+
+
+/*-----------------------------------------------------------------------------------------LA CHACRA*/
+
+.VideoNueces{
+	height:600px;
+}
+
+.Sobre_lachacra{
+	.fotoNogales_Chacra{
+		margin-top: 6%;
+		margin-left: 3%;
+		margin-bottom:2%;
+		border-radius:3%;
+		padding-bottom: 6%;
+	}	
+	.InfoChacra{
+		background-color:white;
+		text-align: left;
+		color:black;
+		font-family: $Muli;
+		margin-top: 12%;
+		margin-bottom:15%;
+		padding: 3% 3% 3% 5%;
+		box-shadow: 0px 0px 8px rgba(0,0,0,.3);
+		&:hover{
+			transition: 1s;
+			box-shadow: 0px 0px 18px rgba(0,0,0,.4);
+		}
+		h1{
+			font-family:$Roboto;
+			font-size: 170%;
+			text-align: left;
+		}
+		.subtitulo{
+			font-size:120%;
+		}
+
+
+	}
+}
+
+.FotoNogal{
+	height: 550px;
+	padding: 0% 100% 0% 0%;
+	background-image: url(../media/Nogal.jpg);
+	transition: 2s;
+	&:hover{
+		background-image: url(../media/FlorManzano.jpg);
+		transition:2s;
+	}
+	/*margin-top: 1.5%;*/
+}
+
+
+
+.Columna{
+
+	margin: 7% 0% 7% 0%;
+	padding-right: 7%;
+	padding-left: 7%;
+	text-align: left;
+
+	button{
+		@include EstiloBoton;
+		font-size: 85%;
+		margin-left:4%;
+	}
+	.subtitulo{
+		font-size:145%;
+		font-family:$Roboto;
+		color: green;
+	}
+}
+
+.SliderEventos{
+	.carousel-indicators li{
+		    display: inline-block;
+		    width: 11px;
+		    height: 11px;
+		    margin: 2px;
+		    text-indent: -999px;
+		    cursor: pointer;
+		    background-color: #000\9;
+		    background-color: rgba(0,0,0,0);
+		    border: 1px solid #fff;
+		    border-radius: 10px;
+
+		}
+	.SliderEventos_texto{
+		font-size: 290%;
+		font-family:$Muli$Roboto;
+		animation: fadeInDown 1s;
+		text-shadow: 2px 1px 2px black;
+		line-height: 1;
+		margin-bottom:10%;
+		.SliderEventos_texto_Muli{
+			font-family:$Roboto;
+			font-weight:lighter;
+			font-size:150%;
+		}
+		.SliderEventos_texto_2{
+			text-align:right;
+			margin-right:0px;
+			margin-bottom: 25%;
+
+		}
+		.SliderEventos_texto_3{
+			font-size: 120%;
+			text-align:left;
+			margin-bottom: 25%;
+		}
+	}
+}
+
+
+.Eventos{
+	margin: 6% 0px 0px 0px;
+
+	.Eventos_Info{			
+		text-align: right;
+		p{
+			width: 80%;
+			font-family: $Muli;
+		}
+		h2{
+			font-family: $Roboto;
+			font-size: 35px;
+			font-weight: regular;
+			color: green;
+			padding-top: 3%;
+			padding-right: 19%;
+			animation: fadeInLeft 2s;
+		}
+
+		a{
+			@include EstiloBoton;
+			margin-top:100%;
+		}
+	}
+	.Eventos_cards{
+		margin-top: 5%;
+		margin-bottom: 8%;
+		display:flex;
+		justify-content: space-evenly;
+		padding-right: 17%;
+		h5{
+			font-family:$Roboto;
+		}
+		a{
+			@include EstiloBoton;
+			font-size: 80%;
+			box-shadow:none;
+		}
+	}
+}
+
+
+/*----------------------------------------------------------------------------------------Sobre Nosotros*/
+
+
+.PortadaHistoria{
+	background-image: url(../media/PortadaHistoria.jpg);
+	background-repeat: no-repeat;
+	padding-top:13%;
+	padding-bottom:($Base*2);
+	div{
+		font-family:$Muli;
+		background-color: white;
+		color:black;
+
+		opacity: 90%;
+		font-size: 95%;
+		margin-left:22%;
+		border-radius: 3%;
+		padding: 3% 3% 3% 3%;
+		line-height:1.5;
+		animation:fadeIn 3s;
+		box-shadow: 0px 0px 8px rgba(0,0,0,.7);
+
+		h1{
+			font-family:$Roboto;
+			font-size:200%;
+		}
+	}
+}
+
+
+.Historia{
+	grid-area: Historia;
+	display: flex;
+	flex-wrap: row;
+	justify-content: space-between;
+	
+	img{
+		align-items:center;
+		margin-top:5%;
+		padding: 1% 15% 5% 1%;
+	}
+	.Historia__Texto{
+		margin-top:9%;
+		text-align: left;
+		line-height: 1.5;
+		font-family: $Muli;
+		padding-left:15%;
+		font-size:18px;
+		text-align:justify;
+		h2{
+			font-family: $Roboto;
+			color: $Musgo;
+		}
+		p{
+			width:($Base*8);
+		}
+		hr{
+			width:($Base*8);
+		}
+	}
+}
+
+
+
+
+.MujerRural{
+	display: flex;
+	flex-direction:row;
+	color:black;
+
+	img{
+		padding: 0% 7% 4% 15%;
+	}
+	article{
+		margin: 2% 0% 0% 0%;
+		font-family: $Muli;
+		text-align: left;	
+		text-align:justify;
+		h2{
+			color:$Musgo;
+			font-family: $Roboto;
+		}
+		p{
+			width:70%;
+		}
+		hr{
+			width:80%;
+			margin-left: 0%;
+		}
+	}
+}
+
+
+.Lista__Ideales {
+	margin-top:5%;
+	margin-bottom:5%;
+	margin-left:4%;
+	font-family:$Muli;
+	ul{
+		padding-right: 10%;
+		h5{
+		font-family:$Roboto;
+		}
+	}
+}
+
+
+/*------------------------------------------------------------------------------------------Contacto*/
+	.contenedorContacto{
+		display: flex;
+		flex-direction:row;
+		flex-wrap:wrap;
+		margin-top:5%;
+
+		.DatosDeContacto{
+			margin: 1% 0% 5% 0%;
+			padding-left:15%;
+			h1{
+				opacity:0%;
+		
+			}
+			p{
+				font-family: $Roboto;
+				font-weight: lighter;
+				color:black;
+				line-height:1.5;
+				font-size: 130%;
+				width: 70%;
+				margin-bottom: 5%;
+				text-align: left;
+				animation:fadeInDown 1s;
+			}
+			article{
+				display: flex;
+				flex-direction: row;
+				div{
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					align-content: space-around;
+					width: 5%;
+					img{
+						padding-top: 10%;
+					}
+				}
+
+				ul{
+					li{
+						font-family: $Muli;
+						list-style-type: none;
+						color: black;
+						font-size: 17px;
+						line-height: 2.3;
+						text-align: left;
+						img{
+							margin-right: 2%;
+						}
+					}
+				}	
+			}
+		}
+		.Formulario{
+			grid-area: formulario;
+			font-family: $Muli;
+			padding: 5% 1% 3% 5%;
+			margin-right: 5%;
+			line-height: 2.5;
+			background-color:#7a7a7a;
+			color:white;
+			box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+			transition: 3s;
+			.Formulario__contenido{
+				margin:0px 0px 0px 0px;
+			}
+			&:hover{
+				background-color:#333333;
+
+			}
+			button{
+				@include EstiloBoton;
+			}
+		}
+	}
+
+	.Iframe{
+		grid-area: Iframe;
+		width: 100%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+	}
+

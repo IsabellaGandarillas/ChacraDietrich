@@ -1,0 +1,868 @@
+@charset "UTF-8";
+/*Tipografías*/
+/*Tipografía Texto*/
+/*Tipografía Títulos y Botones*/
+/*Colores*/
+/*Verde musgo*/
+.Atajos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  font-family: "Mulish", sans-serif;
+  color: black;
+  font-weight: 400;
+  font-size: 120%;
+  margin-bottom: 2%;
+  background: linear-gradient(to left, #8C974F, #d5e86b); }
+  .Atajos p {
+    animation: backInLeft 3s;
+    padding-top: 2%; }
+  .Atajos a {
+    font-family: "Roboto Slab", serif;
+    background-color: #efca08;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5%;
+    transform: scale(1, 1);
+    transition: scale 3s;
+    margin: 1% 1% 1% 1%; }
+    .Atajos a:hover {
+      transition: 0,8s;
+      transform: scale(1.02);
+      text-decoration: none;
+      color: black; }
+
+.TablaDeCosecha {
+  margin-top: 6%; }
+  .TablaDeCosecha p {
+    width: 70%;
+    text-align: justify; }
+  .TablaDeCosecha .subtitulo {
+    font-size: 150%;
+    width: 85%;
+    font-family: "Roboto Slab", serif; }
+  .TablaDeCosecha button {
+    font-family: "Roboto Slab", serif;
+    background-color: #efca08;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5%;
+    transform: scale(1, 1);
+    transition: scale 3s; }
+    .TablaDeCosecha button:hover {
+      transition: 0,8s;
+      transform: scale(1.02);
+      text-decoration: none;
+      color: black; }
+  .TablaDeCosecha table {
+    font-family: "Mulish", sans-serif;
+    font-size: 80%;
+    border: none; }
+    .TablaDeCosecha table thead {
+      background-color: #0CA4A5;
+      color: white;
+      font-family: "Roboto Slab", serif; }
+
+/*---------------------------------------------------------------------------------------NAV*/
+.Nav {
+  background-color: white;
+  position: sticky;
+  top: 0px;
+  font-family: "Mulish", sans-serif;
+  font-size: 15px;
+  z-index: 1;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7); }
+  .Nav .Nav__logo {
+    padding-left: 15%; }
+  .Nav .Lista_Links {
+    margin-left: 55%;
+    text-align: center; }
+    .Nav .Lista_Links a {
+      color: black;
+      padding: 0px 0px 0px 0px;
+      position: relative;
+      text-decoration: none;
+      line-height: 6; }
+      .Nav .Lista_Links a:hover {
+        color: #ff8e0d; }
+      .Nav .Lista_Links a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: orange;
+        visibility: hidden;
+        transform: scaleX(0);
+        transition: all 0.3s ease-in-out; }
+      .Nav .Lista_Links a:hover:before {
+        color: #ff8e0d;
+        visibility: visible;
+        transform: scaleX(1); }
+
+/*
+.Nav{
+	grid-area: Nav;
+	background-color:#fcfcfc;
+	position: sticky;
+	top: 0px;
+	font-family:$Muli;
+	font-size: 15px;
+	overflow: hidden;
+	z-index: 1;
+	height: 90px;
+	color:white;
+	padding-top:0.5%;
+	padding-left:5%;
+	box-shadow: 0px 0px 8px rgba(0,0,0,.7);
+
+ 	ul{
+ 		margin-left:33%;
+ 		display:inline-block;
+ 		text-align: right;
+ 	}
+
+ 	li{
+		display:inline-block;
+
+		a{
+			text-align:right;
+			color:black;
+			padding:0px 20px 0px 20px;
+			position:relative;
+			text-decoration:none;
+			line-height:6;
+			&:hover{
+				color:#ff8e0d;
+			}
+		
+			
+			&:before{
+				content: "";
+				position: absolute;
+				width: 100%;
+				height: 2px;
+				bottom: 0;
+				left: 0;
+				background-color: orange;
+				visibility: hidden;
+				transform: scaleX(0);
+				transition: all 0.3s ease-in-out;
+			}
+			&:hover:before{
+				color:#ff8e0d;
+				visibility: visible;
+  				transform: scaleX(1);
+				}	
+		}
+	}
+}
+
+/*-----------------------------------------------------------------------------------------Footer*/
+.Footer {
+  grid-area: Footer;
+  background: linear-gradient(to bottom, #5c5c5c, #858585);
+  font-family: "Mulish", sans-serif;
+  color: white;
+  line-height: 1.4; }
+  .Footer p {
+    font-weight: lighter;
+    font-size: 75%;
+    margin-left: 5%; }
+  .Footer .Footer__logo {
+    margin-left: 15%;
+    margin-bottom: 4%; }
+  .Footer .Footer__DatosDeContacto {
+    display: inline-block;
+    margin-left: 11%;
+    letter-spacing: 1px;
+    list-style: none;
+    font-weight: lighter;
+    font: 70%;
+    margin-top: 4%; }
+  .Footer .Footer__RedesSociales {
+    display: inline-block;
+    margin-left: 15%;
+    list-style: none;
+    line-height: 1.8;
+    font-size: 100%; }
+    .Footer .Footer__RedesSociales li {
+      padding-left: 3%;
+      padding-right: 3%;
+      display: inline; }
+
+/*Atajos y Botones- Nav y Footer*/
+@media screen and (max-width: 768px) {
+  .Atajos p {
+    padding: 2% 2% 2% 2%;
+    width: 50%; }
+  .Atajos a {
+    margin-top: 5%;
+    height: 40%; } }
+
+@media screen and (max-width: 768px) {
+  .SliderInicio {
+    display: none; }
+  .Sobre_Nosotros img {
+    display: none; }
+  .ServiciosIndex .Cuadros img {
+    display: none; }
+  .SeccionDerivados__Flex img {
+    display: none; }
+  .Historia img {
+    margin-left: 20%; }
+  .MujerRural img {
+    display: none; }
+  .MujerRural article {
+    padding-left: 15%;
+    margin-bottom: 10%; }
+  .Lista__Ideales {
+    margin-left: 0px; }
+  /*Sécción la chacra*/
+  .SliderEventos {
+    display: none; }
+  .FotoBodita {
+    display: none; }
+  .Historia img {
+    margin-left: 0%; }
+  section .Eventos .Eventos_Info {
+    text-align: right; }
+    section .Eventos .Eventos_Info h2 {
+      padding-right: 0%; }
+    section .Eventos .Eventos_Info p {
+      width: 100%; }
+    section .Eventos .Eventos_Info .subtitulo {
+      width: 100%; }
+  section .Eventos .Eventos_cards {
+    display: block; } }
+
+@media screen and (max-width: 768px) {
+  .contenedorContacto .Formulario {
+    align-items: center; } }
+
+@media screen and (min-width: 768px) {
+  .Inicio_Portada {
+    display: none; } }
+
+html {
+  scroll-behavior: smooth; }
+
+/*-----------------------------------------------------------------------------------------Index*/
+.SliderInicio .carousel-indicators li {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 2px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px; }
+
+.SliderInicio .SliderInicio__Texto {
+  font-size: 200%;
+  margin-right: 0%;
+  margin-bottom: 15%;
+  line-height: 1.5;
+  color: white;
+  font-family: "Roboto Slab", serif;
+  animation: fadeInDown 1s; }
+  .SliderInicio .SliderInicio__Texto a {
+    font-family: "Roboto Slab", serif;
+    background-color: #efca08;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5%;
+    transform: scale(1, 1);
+    transition: scale 3s;
+    font-size: 60%; }
+    .SliderInicio .SliderInicio__Texto a:hover {
+      transition: 0,8s;
+      transform: scale(1.02);
+      text-decoration: none;
+      color: black; }
+  .SliderInicio .SliderInicio__Texto .SliderInicio__Texto__1 {
+    text-align: right; }
+    .SliderInicio .SliderInicio__Texto .SliderInicio__Texto__1 p {
+      font-family: "Mulish", sans-serif; }
+  .SliderInicio .SliderInicio__Texto .SliderInicio__Texto__2 {
+    text-align: center;
+    font-size: 120%; }
+    .SliderInicio .SliderInicio__Texto .SliderInicio__Texto__2 a {
+      font-size: 50%; }
+  .SliderInicio .SliderInicio__Texto .SliderInicio__Texto__3 {
+    text-align: center;
+    font-size: 120%; }
+    .SliderInicio .SliderInicio__Texto .SliderInicio__Texto__3 a {
+      font-size: 50%; }
+
+.Inicio_Portada {
+  background-image: url(../media/Atardecerslider.jpg);
+  text-align: center; }
+  .Inicio_Portada article {
+    font-family: "Mulish", sans-serif;
+    font-size: 200%;
+    color: white;
+    padding-top: 20%;
+    padding-bottom: 20%; }
+    .Inicio_Portada article a {
+      font-family: "Roboto Slab", serif;
+      background-color: #efca08;
+      color: black;
+      text-decoration: none;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5%;
+      transform: scale(1, 1);
+      transition: scale 3s;
+      font-size: 70%; }
+      .Inicio_Portada article a:hover {
+        transition: 0,8s;
+        transform: scale(1.02);
+        text-decoration: none;
+        color: black; }
+
+.Sobre_Nosotros {
+  margin-top: 6%;
+  margin-bottom: 3%; }
+  .Sobre_Nosotros .Imagen_logo {
+    padding-right: 6%;
+    padding-left: 14%;
+    padding-bottom: 5%; }
+  .Sobre_Nosotros article {
+    font-family: "Mulish", sans-serif;
+    text-align: justify;
+    font-size: 99%; }
+    .Sobre_Nosotros article .subtitulo {
+      font-family: "Roboto Slab", serif;
+      font-weight: lighter;
+      font-size: 130%; }
+    .Sobre_Nosotros article a {
+      font-family: "Roboto Slab", serif;
+      background-color: #efca08;
+      color: black;
+      text-decoration: none;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5%;
+      transform: scale(1, 1);
+      transition: scale 3s; }
+      .Sobre_Nosotros article a:hover {
+        transition: 0,8s;
+        transform: scale(1.02);
+        text-decoration: none;
+        color: black; }
+
+/*Sección servicios del Index*/
+.Servicios__Titulo hr {
+  width: 65%; }
+
+.Servicios__Titulo h2 {
+  margin-top: 4%;
+  font-size: 176%;
+  text-align: center;
+  font-family: "Roboto Slab", serif;
+  color: #2D2D2D; }
+
+.Servicios__Titulo p {
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  width: 70%;
+  margin-left: 15%; }
+
+.ServiciosIndex {
+  margin-top: 5%;
+  margin-bottom: 6%;
+  margin-left: 5%;
+  display: flex;
+  flex-direction: row nowrap;
+  justify-content: space-around; }
+  .ServiciosIndex li {
+    list-style-type: none; }
+  .ServiciosIndex .Cuadros {
+    border-radius: 6%;
+    width: 75%;
+    padding: 4% 3% 6% 3%;
+    list-style-type: none;
+    text-align: center;
+    font-family: "Roboto Slab", serif;
+    color: white;
+    font-size: 75%;
+    background-color: #6e9c87;
+    transition: background-color 1s;
+    margin: 0% 0% 0% 0%; }
+    .ServiciosIndex .Cuadros h3 {
+      margin-top: 5%;
+      font-size: 170%;
+      font-weight: lighter; }
+    .ServiciosIndex .Cuadros p {
+      width: 90%;
+      text-align: center;
+      padding-left: 15%; }
+    .ServiciosIndex .Cuadros .Cuadros__Boton {
+      background-color: white;
+      border-radius: 5%;
+      color: black;
+      padding: 5px 10px 5px 10px;
+      margin-top: 15%;
+      margin-bottom: 10%; }
+    .ServiciosIndex .Cuadros .Cuadros__Img {
+      margin-top: 5%;
+      margin-bottom: 6%;
+      border-radius: 5%; }
+
+.FotoFinal {
+  grid-area: FotoFinal;
+  width: 100%; }
+
+/*-----------------------------------------------------------------------------------------Productos*/
+.PortadaProductos {
+  background-image: url(../media/fondoProductos.jpg);
+  font-family: "Roboto Slab", serif;
+  text-align: center;
+  padding-top: 10%;
+  padding-bottom: 6%;
+  color: black;
+  border-bottom: #9c9c9c solid 2.5px; }
+  .PortadaProductos h1 {
+    font-size: 160%; }
+  .PortadaProductos p {
+    font-weight: lighter;
+    font-size: 145%;
+    width: 100%;
+    padding-bottom: 3%;
+    animation: slideInDown 1s; }
+  .PortadaProductos li {
+    display: inline-block;
+    margin-right: 4%;
+    margin-bottom: 5%;
+    font-size: 130%; }
+    .PortadaProductos li a {
+      font-family: "Roboto Slab", serif;
+      background-color: #efca08;
+      color: black;
+      text-decoration: none;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5%;
+      transform: scale(1, 1);
+      transition: scale 3s; }
+      .PortadaProductos li a:hover {
+        transition: 0,8s;
+        transform: scale(1.02);
+        text-decoration: none;
+        color: black; }
+
+/*Frutos Secos Seccion*/
+.SeccionFrutosSecos {
+  margin: 8% 3% 8% 11%;
+  font-family: "Mulish", sans-serif;
+  text-align: justify; }
+  .SeccionFrutosSecos div {
+    padding-right: 7%; }
+    .SeccionFrutosSecos div h2 {
+      margin-bottom: 6%; }
+    .SeccionFrutosSecos div p {
+      margin-top: 6%; }
+      .SeccionFrutosSecos div p a {
+        font-family: "Roboto Slab", serif;
+        background-color: #efca08;
+        color: black;
+        text-decoration: none;
+        padding: 10px 10px 10px 10px;
+        border-radius: 5%;
+        transform: scale(1, 1);
+        transition: scale 3s;
+        font-size: 90%; }
+        .SeccionFrutosSecos div p a:hover {
+          transition: 0,8s;
+          transform: scale(1.02);
+          text-decoration: none;
+          color: black; }
+
+/*...Foto Nuez Full Size...*/
+.FotoNuez {
+  width: 100%; }
+
+/*....Fruta Fresca*/
+.SeccionFrutaFresca {
+  margin-left: 11%;
+  margin-top: 8%;
+  margin-bottom: 8%; }
+  .SeccionFrutaFresca h2 {
+    margin-bottom: 4%; }
+  .SeccionFrutaFresca .SeccionFrutaFresca__Info {
+    padding-right: 7%;
+    font-family: "Mulish", sans-serif;
+    text-align: justify; }
+    .SeccionFrutaFresca .SeccionFrutaFresca__Info a {
+      font-family: "Roboto Slab", serif;
+      background-color: #efca08;
+      color: black;
+      text-decoration: none;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5%;
+      transform: scale(1, 1);
+      transition: scale 3s; }
+      .SeccionFrutaFresca .SeccionFrutaFresca__Info a:hover {
+        transition: 0,8s;
+        transform: scale(1.02);
+        text-decoration: none;
+        color: black; }
+
+/*Productos Derivados 		display: flex;
+		flex-direction:row;
+		margin-top: 7%;
+		margin-left: 130px;*/
+.SeccionDerivados {
+  margin-top: 6%; }
+  .SeccionDerivados .SeccionDerivados__Flex {
+    font-family: "Mulish", sans-serif; }
+    .SeccionDerivados .SeccionDerivados__Flex .SeccionDerivados__Flex__Info {
+      text-align: justify;
+      padding-left: 13%;
+      padding-right: 4%; }
+      .SeccionDerivados .SeccionDerivados__Flex .SeccionDerivados__Flex__Info h2 {
+        margin-left: 0%;
+        font-size: "Roboto Slab", serif; }
+  .SeccionDerivados h3 {
+    margin-top: 5%;
+    font-family: "Mulish", sans-serif;
+    font-size: 130%;
+    color: black;
+    text-align: left;
+    margin-left: 8%; }
+  .SeccionDerivados .SeccionDerivados__Cuadros {
+    display: flex;
+    flex-direction: row;
+    justify-content: justify;
+    width: 100%;
+    list-style-type: none;
+    margin-bottom: 1%; }
+    .SeccionDerivados .SeccionDerivados__Cuadros .Cuadros {
+      padding: 4% 3% 2% 3%;
+      list-style-type: none;
+      text-align: center;
+      color: black;
+      margin: 0% 0% 0% 0%;
+      flex-wrap: wrap; }
+      .SeccionDerivados .SeccionDerivados__Cuadros .Cuadros .SeccionDerivados__Cuadros__titulo {
+        padding-top: 5%;
+        font-family: "Roboto Slab", serif;
+        font-size: 110%; }
+
+.titulo {
+  font-family: "Roboto Slab", serif;
+  font-size: 170%;
+  color: green;
+  text-align: left;
+  animation: fadeInLeft 2s;
+  margin-bottom: 2%; }
+
+/*-----------------------------------------------------------------------------------------LA CHACRA*/
+.VideoNueces {
+  height: 600px; }
+
+.Sobre_lachacra .fotoNogales_Chacra {
+  margin-top: 6%;
+  margin-left: 3%;
+  margin-bottom: 2%;
+  border-radius: 3%;
+  padding-bottom: 6%; }
+
+.Sobre_lachacra .InfoChacra {
+  background-color: white;
+  text-align: left;
+  color: black;
+  font-family: "Mulish", sans-serif;
+  margin-top: 12%;
+  margin-bottom: 15%;
+  padding: 3% 3% 3% 5%;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3); }
+  .Sobre_lachacra .InfoChacra:hover {
+    transition: 1s;
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.4); }
+  .Sobre_lachacra .InfoChacra h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 170%;
+    text-align: left; }
+  .Sobre_lachacra .InfoChacra .subtitulo {
+    font-size: 120%; }
+
+.FotoNogal {
+  height: 550px;
+  padding: 0% 100% 0% 0%;
+  background-image: url(../media/Nogal.jpg);
+  transition: 2s;
+  /*margin-top: 1.5%;*/ }
+  .FotoNogal:hover {
+    background-image: url(../media/FlorManzano.jpg);
+    transition: 2s; }
+
+.Columna {
+  margin: 7% 0% 7% 0%;
+  padding-right: 7%;
+  padding-left: 7%;
+  text-align: left; }
+  .Columna button {
+    font-family: "Roboto Slab", serif;
+    background-color: #efca08;
+    color: black;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5%;
+    transform: scale(1, 1);
+    transition: scale 3s;
+    font-size: 85%;
+    margin-left: 4%; }
+    .Columna button:hover {
+      transition: 0,8s;
+      transform: scale(1.02);
+      text-decoration: none;
+      color: black; }
+  .Columna .subtitulo {
+    font-size: 145%;
+    font-family: "Roboto Slab", serif;
+    color: green; }
+
+.SliderEventos .carousel-indicators li {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin: 2px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #000\9;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid #fff;
+  border-radius: 10px; }
+
+.SliderEventos .SliderEventos_texto {
+  font-size: 290%;
+  font-family: "Mulish", sans-serif "Roboto Slab", serif;
+  animation: fadeInDown 1s;
+  text-shadow: 2px 1px 2px black;
+  line-height: 1;
+  margin-bottom: 10%; }
+  .SliderEventos .SliderEventos_texto .SliderEventos_texto_Muli {
+    font-family: "Roboto Slab", serif;
+    font-weight: lighter;
+    font-size: 150%; }
+  .SliderEventos .SliderEventos_texto .SliderEventos_texto_2 {
+    text-align: right;
+    margin-right: 0px;
+    margin-bottom: 25%; }
+  .SliderEventos .SliderEventos_texto .SliderEventos_texto_3 {
+    font-size: 120%;
+    text-align: left;
+    margin-bottom: 25%; }
+
+.Eventos {
+  margin: 6% 0px 0px 0px; }
+  .Eventos .Eventos_Info {
+    text-align: right; }
+    .Eventos .Eventos_Info p {
+      width: 80%;
+      font-family: "Mulish", sans-serif; }
+    .Eventos .Eventos_Info h2 {
+      font-family: "Roboto Slab", serif;
+      font-size: 35px;
+      font-weight: regular;
+      color: green;
+      padding-top: 3%;
+      padding-right: 19%;
+      animation: fadeInLeft 2s; }
+    .Eventos .Eventos_Info a {
+      font-family: "Roboto Slab", serif;
+      background-color: #efca08;
+      color: black;
+      text-decoration: none;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5%;
+      transform: scale(1, 1);
+      transition: scale 3s;
+      margin-top: 100%; }
+      .Eventos .Eventos_Info a:hover {
+        transition: 0,8s;
+        transform: scale(1.02);
+        text-decoration: none;
+        color: black; }
+  .Eventos .Eventos_cards {
+    margin-top: 5%;
+    margin-bottom: 8%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 17%; }
+    .Eventos .Eventos_cards h5 {
+      font-family: "Roboto Slab", serif; }
+    .Eventos .Eventos_cards a {
+      font-family: "Roboto Slab", serif;
+      background-color: #efca08;
+      color: black;
+      text-decoration: none;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5%;
+      transform: scale(1, 1);
+      transition: scale 3s;
+      font-size: 80%;
+      box-shadow: none; }
+      .Eventos .Eventos_cards a:hover {
+        transition: 0,8s;
+        transform: scale(1.02);
+        text-decoration: none;
+        color: black; }
+
+/*----------------------------------------------------------------------------------------Sobre Nosotros*/
+.PortadaHistoria {
+  background-image: url(../media/PortadaHistoria.jpg);
+  background-repeat: no-repeat;
+  padding-top: 13%;
+  padding-bottom: 20%; }
+  .PortadaHistoria div {
+    font-family: "Mulish", sans-serif;
+    background-color: white;
+    color: black;
+    opacity: 90%;
+    font-size: 95%;
+    margin-left: 22%;
+    border-radius: 3%;
+    padding: 3% 3% 3% 3%;
+    line-height: 1.5;
+    animation: fadeIn 3s;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7); }
+    .PortadaHistoria div h1 {
+      font-family: "Roboto Slab", serif;
+      font-size: 200%; }
+
+.Historia {
+  grid-area: Historia;
+  display: flex;
+  flex-wrap: row;
+  justify-content: space-between; }
+  .Historia img {
+    align-items: center;
+    margin-top: 5%;
+    padding: 1% 15% 5% 1%; }
+  .Historia .Historia__Texto {
+    margin-top: 9%;
+    text-align: left;
+    line-height: 1.5;
+    font-family: "Mulish", sans-serif;
+    padding-left: 15%;
+    font-size: 18px;
+    text-align: justify; }
+    .Historia .Historia__Texto h2 {
+      font-family: "Roboto Slab", serif;
+      color: #8C974F; }
+    .Historia .Historia__Texto p {
+      width: 80%; }
+    .Historia .Historia__Texto hr {
+      width: 80%; }
+
+.MujerRural {
+  display: flex;
+  flex-direction: row;
+  color: black; }
+  .MujerRural img {
+    padding: 0% 7% 4% 15%; }
+  .MujerRural article {
+    margin: 2% 0% 0% 0%;
+    font-family: "Mulish", sans-serif;
+    text-align: left;
+    text-align: justify; }
+    .MujerRural article h2 {
+      color: #8C974F;
+      font-family: "Roboto Slab", serif; }
+    .MujerRural article p {
+      width: 70%; }
+    .MujerRural article hr {
+      width: 80%;
+      margin-left: 0%; }
+
+.Lista__Ideales {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  margin-left: 4%;
+  font-family: "Mulish", sans-serif; }
+  .Lista__Ideales ul {
+    padding-right: 10%; }
+    .Lista__Ideales ul h5 {
+      font-family: "Roboto Slab", serif; }
+
+/*------------------------------------------------------------------------------------------Contacto*/
+.contenedorContacto {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 5%; }
+  .contenedorContacto .DatosDeContacto {
+    margin: 1% 0% 5% 0%;
+    padding-left: 15%; }
+    .contenedorContacto .DatosDeContacto h1 {
+      opacity: 0%; }
+    .contenedorContacto .DatosDeContacto p {
+      font-family: "Roboto Slab", serif;
+      font-weight: lighter;
+      color: black;
+      line-height: 1.5;
+      font-size: 130%;
+      width: 70%;
+      margin-bottom: 5%;
+      text-align: left;
+      animation: fadeInDown 1s; }
+    .contenedorContacto .DatosDeContacto article {
+      display: flex;
+      flex-direction: row; }
+      .contenedorContacto .DatosDeContacto article div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-content: space-around;
+        width: 5%; }
+        .contenedorContacto .DatosDeContacto article div img {
+          padding-top: 10%; }
+      .contenedorContacto .DatosDeContacto article ul li {
+        font-family: "Mulish", sans-serif;
+        list-style-type: none;
+        color: black;
+        font-size: 17px;
+        line-height: 2.3;
+        text-align: left; }
+        .contenedorContacto .DatosDeContacto article ul li img {
+          margin-right: 2%; }
+  .contenedorContacto .Formulario {
+    grid-area: formulario;
+    font-family: "Mulish", sans-serif;
+    padding: 5% 1% 3% 5%;
+    margin-right: 5%;
+    line-height: 2.5;
+    background-color: #7a7a7a;
+    color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    transition: 3s; }
+    .contenedorContacto .Formulario .Formulario__contenido {
+      margin: 0px 0px 0px 0px; }
+    .contenedorContacto .Formulario:hover {
+      background-color: #333333; }
+    .contenedorContacto .Formulario button {
+      font-family: "Roboto Slab", serif;
+      background-color: #efca08;
+      color: black;
+      text-decoration: none;
+      padding: 10px 10px 10px 10px;
+      border-radius: 5%;
+      transform: scale(1, 1);
+      transition: scale 3s; }
+      .contenedorContacto .Formulario button:hover {
+        transition: 0,8s;
+        transform: scale(1.02);
+        text-decoration: none;
+        color: black; }
+
+.Iframe {
+  grid-area: Iframe;
+  width: 100%;
+  margin-top: 5%;
+  margin-bottom: 5%; }

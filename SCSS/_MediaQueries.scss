@@ -1,0 +1,109 @@
+
+@media screen and (max-width:768px){
+	.Atajos{
+		p{
+			padding: 2% 2% 2% 2%;
+			width: 50%;
+		}
+		a{
+			margin-top: 5%;
+			height: 40%;
+		}
+
+	}
+
+}
+
+
+
+@media screen and (max-width:768px){
+
+	.SliderInicio{
+		display:none;
+	}
+	.Sobre_Nosotros{
+		img{
+			display:none;
+		}
+	}
+
+	.ServiciosIndex{
+		.Cuadros{
+			img{
+				display:none;
+			}
+		}
+	}
+
+	.SeccionDerivados__Flex{
+		img{
+			display:none;
+		}
+	}
+
+	.Historia{
+		img{
+			margin-left: 20%;
+		}
+	}
+	.MujerRural{
+		img{
+			display:none;
+		}
+		article{
+			padding-left: 15%;
+			margin-bottom: 10%;
+		}
+	}
+	.Lista__Ideales{
+		margin-left:0px;
+	}
+
+	/*Sécción la chacra*/
+
+	.SliderEventos{
+		display:none;
+	}
+	.FotoBodita{
+		display:none;
+	}
+	.Historia{
+		img{
+			margin-left:0%;
+		}
+	}
+
+	section{
+		.Eventos{
+			.Eventos_Info{
+				h2{
+					padding-right:0%;
+				}
+				text-align:right;
+				p{
+					width:100%;
+				}
+				.subtitulo{
+					width:100%;
+				}
+			}
+			.Eventos_cards{
+				display:block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width:768px){
+	.contenedorContacto{
+		.Formulario{
+			align-items: center;
+		}
+	}
+}
+
+@media screen and (min-width:768px){
+	.Inicio_Portada{
+		display:none;
+	}
+}
