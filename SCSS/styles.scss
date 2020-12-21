@@ -354,7 +354,6 @@ html{
 
 
 /*-----------------------------------------------------------------------------------------LA CHACRA*/
-
 .VideoNueces{
 	height:600px;
 }
@@ -514,6 +513,7 @@ html{
 
 .PortadaHistoria{
 	background-image: url(../media/PortadaHistoria.jpg);
+	width: 100%;
 	background-repeat: no-repeat;
 	padding-top:13%;
 	padding-bottom:($Base*2);
@@ -684,9 +684,13 @@ html{
 				margin:0px 0px 0px 0px;
 			}
 			&:hover{
-				background-color:#333333;
-
+				background-color:#436646;
 			}
+
+			.form-group{
+				padding-left: 0px;
+			} 
+
 			button{
 				@include EstiloBoton;
 			}

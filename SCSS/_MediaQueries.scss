@@ -11,13 +11,13 @@
 		}
 
 	}
-
 }
 
 
 
 @media screen and (max-width:768px){
-
+	
+	/*Index*/
 	.SliderInicio{
 		display:none;
 	}
@@ -29,6 +29,7 @@
 
 	.ServiciosIndex{
 		.Cuadros{
+			margin-bottom:3%;
 			img{
 				display:none;
 			}
@@ -40,6 +41,8 @@
 			display:none;
 		}
 	}
+
+	/*Sobre Nosotros */
 
 	.Historia{
 		img{
@@ -61,25 +64,21 @@
 
 	/*Sécción la chacra*/
 
+
 	.SliderEventos{
 		display:none;
 	}
 	.FotoBodita{
 		display:none;
 	}
-	.Historia{
-		img{
-			margin-left:0%;
-		}
-	}
-
 	section{
 		.Eventos{
 			.Eventos_Info{
-				h2{
-					padding-right:0%;
-				}
 				text-align:right;
+				h2{
+					padding-left:0%;
+				}
+				
 				p{
 					width:100%;
 				}
@@ -101,6 +100,7 @@
 		}
 	}
 }
+
 
 @media screen and (min-width:768px){
 	.Inicio_Portada{

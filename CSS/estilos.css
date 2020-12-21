@@ -75,19 +75,20 @@
   z-index: 1;
   box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.7); }
   .Nav .Nav__logo {
-    padding-left: 15%; }
-  .Nav .Lista_Links {
-    margin-left: 55%;
+    margin-left: 45%; }
+  .Nav div .Lista_Links {
+    margin-left: 50%;
     text-align: center; }
-    .Nav .Lista_Links a {
+    .Nav div .Lista_Links a {
       color: black;
       padding: 0px 0px 0px 0px;
       position: relative;
       text-decoration: none;
-      line-height: 6; }
-      .Nav .Lista_Links a:hover {
+      line-height: 2;
+      margin-bottom: 0px; }
+      .Nav div .Lista_Links a:hover {
         color: #ff8e0d; }
-      .Nav .Lista_Links a:before {
+      .Nav div .Lista_Links a:before {
         content: "";
         position: absolute;
         width: 100%;
@@ -97,69 +98,12 @@
         background-color: orange;
         visibility: hidden;
         transform: scaleX(0);
-        transition: all 0.3s ease-in-out; }
-      .Nav .Lista_Links a:hover:before {
+        transition: all 0.3s ease-in-out;
+        color: #ff8e0d; }
+      .Nav div .Lista_Links a:hover:before {
         color: #ff8e0d;
         visibility: visible;
         transform: scaleX(1); }
-
-/*
-.Nav{
-	grid-area: Nav;
-	background-color:#fcfcfc;
-	position: sticky;
-	top: 0px;
-	font-family:$Muli;
-	font-size: 15px;
-	overflow: hidden;
-	z-index: 1;
-	height: 90px;
-	color:white;
-	padding-top:0.5%;
-	padding-left:5%;
-	box-shadow: 0px 0px 8px rgba(0,0,0,.7);
-
- 	ul{
- 		margin-left:33%;
- 		display:inline-block;
- 		text-align: right;
- 	}
-
- 	li{
-		display:inline-block;
-
-		a{
-			text-align:right;
-			color:black;
-			padding:0px 20px 0px 20px;
-			position:relative;
-			text-decoration:none;
-			line-height:6;
-			&:hover{
-				color:#ff8e0d;
-			}
-		
-			
-			&:before{
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 2px;
-				bottom: 0;
-				left: 0;
-				background-color: orange;
-				visibility: hidden;
-				transform: scaleX(0);
-				transition: all 0.3s ease-in-out;
-			}
-			&:hover:before{
-				color:#ff8e0d;
-				visibility: visible;
-  				transform: scaleX(1);
-				}	
-		}
-	}
-}
 
 /*-----------------------------------------------------------------------------------------Footer*/
 .Footer {
@@ -167,13 +111,10 @@
   background: linear-gradient(to bottom, #5c5c5c, #858585);
   font-family: "Mulish", sans-serif;
   color: white;
-  line-height: 1.4; }
-  .Footer p {
-    font-weight: lighter;
-    font-size: 75%;
-    margin-left: 5%; }
+  line-height: 1.4;
+  padding-top: 2%; }
   .Footer .Footer__logo {
-    margin-left: 15%;
+    margin-left: 10%;
     margin-bottom: 4%; }
   .Footer .Footer__DatosDeContacto {
     display: inline-block;
@@ -181,18 +122,16 @@
     letter-spacing: 1px;
     list-style: none;
     font-weight: lighter;
-    font: 70%;
-    margin-top: 4%; }
+    font: 50%;
+    padding-top: 3%; }
   .Footer .Footer__RedesSociales {
     display: inline-block;
-    margin-left: 15%;
-    list-style: none;
-    line-height: 1.8;
-    font-size: 100%; }
+    margin-left: 11%; }
     .Footer .Footer__RedesSociales li {
       padding-left: 3%;
       padding-right: 3%;
-      display: inline; }
+      display: inline-block;
+      list-style: none; }
 
 /*Atajos y Botones- Nav y Footer*/
 @media screen and (max-width: 768px) {
@@ -204,14 +143,18 @@
     height: 40%; } }
 
 @media screen and (max-width: 768px) {
+  /*Index*/
   .SliderInicio {
     display: none; }
   .Sobre_Nosotros img {
     display: none; }
-  .ServiciosIndex .Cuadros img {
-    display: none; }
+  .ServiciosIndex .Cuadros {
+    margin-bottom: 3%; }
+    .ServiciosIndex .Cuadros img {
+      display: none; }
   .SeccionDerivados__Flex img {
     display: none; }
+  /*Sobre Nosotros */
   .Historia img {
     margin-left: 20%; }
   .MujerRural img {
@@ -226,12 +169,10 @@
     display: none; }
   .FotoBodita {
     display: none; }
-  .Historia img {
-    margin-left: 0%; }
   section .Eventos .Eventos_Info {
     text-align: right; }
     section .Eventos .Eventos_Info h2 {
-      padding-right: 0%; }
+      padding-left: 0%; }
     section .Eventos .Eventos_Info p {
       width: 100%; }
     section .Eventos .Eventos_Info .subtitulo {
@@ -717,6 +658,7 @@ html {
 /*----------------------------------------------------------------------------------------Sobre Nosotros*/
 .PortadaHistoria {
   background-image: url(../media/PortadaHistoria.jpg);
+  width: 100%;
   background-repeat: no-repeat;
   padding-top: 13%;
   padding-bottom: 20%; }
@@ -845,7 +787,9 @@ html {
     .contenedorContacto .Formulario .Formulario__contenido {
       margin: 0px 0px 0px 0px; }
     .contenedorContacto .Formulario:hover {
-      background-color: #333333; }
+      background-color: #436646; }
+    .contenedorContacto .Formulario .form-group {
+      padding-left: 0px; }
     .contenedorContacto .Formulario button {
       font-family: "Roboto Slab", serif;
       background-color: #efca08;
